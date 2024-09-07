@@ -1,9 +1,10 @@
 import Menu from './menu/Menu'
+import styles from './Sidebar.module.scss'
 
 export default function Sidebar() {
 	return (
-		<div>
+		<aside className={styles.sidebar}>
 			<Menu />
-		</div>
+		</aside>
 	)
 }

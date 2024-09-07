@@ -1,0 +1,14 @@
+.sidebar {
+	@apply fixed left-4 top-4 rounded-lg bg-white/5 w-56 py-2 shadow-lg whitespace-nowrap overflow-hidden;
+}
+
+.menu {
+	> a {
+		@apply grid gap-3 py-3 px-5 transition-colors duration-300 ease-in-out;
+		grid-template-columns: 1fr 6fr;
+
+		&:hover {
+			@apply bg-white/10 text-orange-300 transition-colors duration-300 ease-in-out;
+		}
+	}
+}
