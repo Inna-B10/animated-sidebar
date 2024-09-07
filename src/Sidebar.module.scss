@@ -1,6 +1,21 @@
 .sidebar {
 	@apply fixed left-4 top-4 rounded-lg bg-white/5 w-56 py-2 shadow-lg whitespace-nowrap overflow-hidden;
 
+	&.collapsed {
+		.menu {
+			> a {
+				@apply p-2 flex items-center justify-center;
+
+				&:hover {
+					@apply bg-transparent;
+				}
+			}
+		}
+		.toggle {
+			@apply top-0 left-[0.4rem];
+		}
+	}
+
 	.menu {
 		@apply pt-8;
 		> a {
