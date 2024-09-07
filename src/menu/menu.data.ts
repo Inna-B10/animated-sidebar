@@ -4,7 +4,7 @@ import {
 	Home,
 	LucideIcon,
 	Settings,
-	User,
+	Users,
 } from 'lucide-react'
 
 export interface IMenuItem {
@@ -20,7 +20,7 @@ export const MENU: IMenuItem[] = [
 		link: './',
 	},
 	{
-		icon: User,
+		icon: Users,
 		name: 'Friends',
 		link: './friends',
 	},
