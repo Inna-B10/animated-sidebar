@@ -1,14 +1,23 @@
 .sidebar {
 	@apply fixed left-4 top-4 rounded-lg bg-white/5 w-56 py-2 shadow-lg whitespace-nowrap overflow-hidden;
-}
 
-.menu {
-	> a {
-		@apply grid gap-3 py-3 px-5 transition-colors duration-300 ease-in-out;
-		grid-template-columns: 1fr 6fr;
+	.menu {
+		@apply pt-8;
+		> a {
+			@apply grid gap-3 py-3 px-5 transition-colors duration-300 ease-in-out;
+			grid-template-columns: 1fr 6fr;
+
+			&:hover {
+				@apply bg-white/10 text-orange-300 transition-colors duration-300 ease-in-out;
+			}
+		}
+	}
+
+	.toggle {
+		@apply absolute top-0 right-0 flex w-10 h-10 items-center justify-center cursor-pointer opacity-50;
 
 		&:hover {
-			@apply bg-white/10 text-orange-300 transition-colors duration-300 ease-in-out;
+			@apply opacity-70 text-orange-300;
 		}
 	}
 }
