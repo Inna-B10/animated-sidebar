@@ -1,5 +1,11 @@
+import Sidebar from './Sidebar'
+
 function App() {
-	return <>Main</>
+	return (
+		<main>
+			<Sidebar />
+		</main>
+	)
 }
 
 export default App
